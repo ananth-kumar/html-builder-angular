@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  static itemChange(item, itemComponent) {
+    console.log('itemChanged', item, itemComponent);
+  }
+
+  static itemResize(item, itemComponent) {
+    console.log('itemResized', item, itemComponent);
+  }
 }
