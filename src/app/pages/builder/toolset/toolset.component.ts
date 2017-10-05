@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./toolset.component.css']
 })
 export class ToolsetComponent implements OnInit {
-
+  transferData: 'dd';
   constructor() { }
 
   ngOnInit() {

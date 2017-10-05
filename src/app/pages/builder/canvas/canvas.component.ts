@@ -51,14 +51,15 @@ export class CanvasComponent implements OnInit {
 
   allowDropFunction(baseInteger: number): any {
     return (dragData: any) => dragData % baseInteger === 0;
-}
+  }
 
-addTobox1Items($event: any) {
-    this.box1Items.push($event.dragData);
-}
+  addTobox1Items($event: any) {
+    console.log($event);
+  }
 
-addTobox2Items($event: any) {
+  onDrop($event: any) {
     this.box2Items.push($event.dragData);
-}
+    console.log($event);
+  }
 
 }
