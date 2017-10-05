@@ -1,15 +1,8 @@
 <div style="height: 600px">
   <gridster [options]="options">
-
-    <gridster-item [item]="item" *ngFor="let item of dashboard">
-      <div class="item-buttons">
-        <button class="btn btn-primary drag-handler">||
-          </button>
+    <gridster-item class="grid-item" (onDragStart)="onDragStart($event)" [item]="item" *ngFor="let item of dashboard">
+      <div dnd-droppable class="panel dropZone panel-info" (onDropSuccess)="onDrop($event)">
       </div>
-      <div dnd-droppable class="panel panel-info" (onDropSuccess)="onDrop($event)">
-        Some content to select and click without dragging the widget
-      </div>
-
     </gridster-item>
   </gridster>
 </div>

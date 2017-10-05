@@ -1,0 +1,20 @@
+.hoverable-buttons {
+  transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  position: absolute;
+  top: -30px;
+  background: #fff;
+  right: 0;
+}
+.hoverable-buttons i {
+  cursor: pointer;
+}
+.grid-item:hover .hoverable-buttons {
+  top: 2px;
+}
+.hand-cursor {
+  cursor: move !important;
+}
+.dropZone {
+  width: 100%;
+  height: 100%;
+}
